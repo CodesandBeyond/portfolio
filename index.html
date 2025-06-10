@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
+    <script src="js/filter.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="Brand Logo" /></a>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Codes and Beyond</h1>
+    <p>Web & Graphic Design</p>
+    <a href="contact.html" class="hero-btn">Let's Create Together</a>
+  </div>
+</section>
+
+<section class="work-section">
+  <h2>Featured Work</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Designs</button>
+    <button class="filter-btn" data-filter="graphic">Graphic Designs</button>
+  </div>
+
+  <div class="work-gallery">
+    <!-- Web Design Projects -->
+    <div class="work-group web-group" hidden>
+      <div class="work-item web">
+        <img src="#" alt="Web Project 1">
+        <p></p>
+      </div>
+      <div class="work-item web">
+        <img src="#" alt="Web Project 2">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Graphic Design Projects -->
+    <div class="work-group graphic-group">
+      <div class="work-item graphic">
+        <img src="img/graphic designs/orange kitty.png" alt="Graphic Design 1">
+        <p>Orange Kitty</p>
+      </div>
+      <div class="work-item graphic">
+        <img src="img/graphic designs/mother and daughter.png" alt="Graphic Design 2">
+        <p>Mother & Pup</p>
+      </div>
+      <div class="work-item graphic">
+        <img src="img/graphic designs/fantasy wolf pup.png" alt="Graphic Design 3">
+        <p>Wolf Pup Princess</p>
+      </div>
+      <div class="work-item graphic">
+        <img src="img/graphic designs/forest meeting.png" alt="Graphic Design 4">
+        <p>Forest Meeting</p>
+      </div>
+      <div class="work-item graphic">
+        <img src="img/graphic designs/tiny houses in strange places.png" alt="Graphic Design 5">
+        <p>Tiny Houses in Strange Places</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="image-modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-img" id="modal-img" src="" alt="Full View">
+</div>
+
+</body>
+</html>

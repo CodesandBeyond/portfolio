@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/email.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="Brand Logo" /></a>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+  </header>
+
+<section class="contact" id="contact">
+  <h2>Let's Make Magic</h2>
+  <p>Got a project or idea? I'd love to hear from you!</p>
+
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Tell me everything..." rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="form-message" class="form-message"></p>
+</section>
+</body>
+</html>
